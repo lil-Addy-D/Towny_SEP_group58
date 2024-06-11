@@ -1,5 +1,7 @@
 package com.palmergames.util;
 
+import com.palmergames.util.CoverageUtil;
+
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -37,4 +39,10 @@ public class TimeTests {
 		assertEquals(0, TimeTools.getHours(1));
 		assertEquals(10, TimeTools.getHours(TimeUnit.HOURS.toMillis(10)));
 	}
+    @Test
+	void printCoverage() {
+		// Print coverage for remArgs
+		CoverageUtil.printCoverage(CoverageUtil.branchCoverageRemArgs);
+	}
+
 }
