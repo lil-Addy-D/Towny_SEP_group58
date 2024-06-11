@@ -106,11 +106,16 @@ public class StringMgmt {
 	}
 
 	public static String[] remArgs(String[] arr, int startFromIndex) {
-		if (arr.length == 0)
+		if (arr.length == 0){
+			CoverageUtil.coverBranchRemArgs("remArgs_branch_1");
 			return arr;
-		else if (arr.length < startFromIndex)
+		}
+		else if (arr.length < startFromIndex){
+			CoverageUtil.coverBranchRemArgs("remArgs_branch_2");
 			return new String[0];
+		}
 		else {
+			CoverageUtil.coverBranchRemArgs("remArgs_branch_3");
 			String[] newSplit = new String[arr.length - startFromIndex];
 			System.arraycopy(arr, startFromIndex, newSplit, 0, arr.length - startFromIndex);
 			return newSplit;

@@ -17,9 +17,15 @@ public class CoverageUtil {
 		}
 
 		public static void printCoverage(Map<String, Boolean> branchCoverage) {
+			int coveredCount = 0;
 			for (Map.Entry<String, Boolean> entry : branchCoverage.entrySet()) {
 				System.out.println(entry.getKey() + " was " + (entry.getValue() ? "hit" : "not hit"));
+				if (entry.getValue()) {
+					coveredCount++;
+				}
 			}
+			double coveragePercentage = (coveredCount / (double) branchCoverage.size()) * 100;
+			System.out.println("Coverage: " + coveragePercentage + "%");
 		}
 	
 
