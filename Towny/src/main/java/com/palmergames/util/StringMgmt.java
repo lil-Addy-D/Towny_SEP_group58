@@ -219,14 +219,20 @@ public class StringMgmt {
 	}
 	
 	public static boolean isAllUpperCase(@NotNull String string) {
-		if (string.isEmpty())
+		if (string.isEmpty()){
+			CoverageUtil.coverBranchIsAllUpperCase("isAllUpperCase_branch_1");
 			return false;
+		}
 
 		for (int i = 0; i < string.length(); i++) {
 			char character = string.charAt(i);
-			if (Character.isLowerCase(character))
+			if (Character.isLowerCase(character)) {
+				CoverageUtil.coverBranchIsAllUpperCase("isAllUpperCase_branch_2");
 				return false;
+			}
 		}
+		
+		CoverageUtil.coverBranchIsAllUpperCase("isAllUpperCase_branch_3");
 		return true;
 	}
 	

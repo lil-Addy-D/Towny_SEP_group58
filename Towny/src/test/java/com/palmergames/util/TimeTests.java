@@ -41,8 +41,10 @@ public class TimeTests {
 	}
     @Test
 	void printCoverage() {
-		// Print coverage for remArgs
-		CoverageUtil.printCoverage(CoverageUtil.branchCoverageRemArgs);
+		// Print coverage
+		//CoverageUtil.printCoverage(CoverageUtil.branchCoverageRemArgs);
+		CoverageUtil.printCoverage(CoverageUtil.branchCoverageIsAllUpperCase);
+		
 	}
 
 }
