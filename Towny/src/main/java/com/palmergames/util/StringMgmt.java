@@ -19,6 +19,8 @@ import java.util.stream.Stream;
 import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.NotNull;
 
+
+
 /**
  * Useful functions related to strings, or arrays of them.
  * 
@@ -104,7 +106,6 @@ public class StringMgmt {
 	}
 
 	public static String[] remArgs(String[] arr, int startFromIndex) {
-
 		if (arr.length == 0)
 			return arr;
 		else if (arr.length < startFromIndex)
