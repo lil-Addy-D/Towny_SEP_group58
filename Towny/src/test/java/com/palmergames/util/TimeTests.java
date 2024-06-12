@@ -39,12 +39,6 @@ public class TimeTests {
 		assertEquals(0, TimeTools.getHours(1));
 		assertEquals(10, TimeTools.getHours(TimeUnit.HOURS.toMillis(10)));
 	}
-    @Test
-	void printCoverage() {
-		// Print coverage
-		//CoverageUtil.printCoverage(CoverageUtil.branchCoverageRemArgs);
-		CoverageUtil.printCoverage(CoverageUtil.branchCoverageIsAllUpperCase);
-		
-	}
+   
 
 }
