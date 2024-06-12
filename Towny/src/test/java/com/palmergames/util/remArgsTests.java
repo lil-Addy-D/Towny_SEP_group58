@@ -45,8 +45,6 @@ public class remArgsTests {
 	void printCoverage() {
 		// Print coverage
 		CoverageUtil.printCoverage(CoverageUtil.branchCoverageRemArgs);
-		//CoverageUtil.printCoverage(CoverageUtil.branchCoverageIsAllUpperCase);
-
 	}
 
 }
