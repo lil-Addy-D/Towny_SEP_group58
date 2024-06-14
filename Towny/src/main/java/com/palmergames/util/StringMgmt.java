@@ -127,11 +127,16 @@ public class StringMgmt {
 		//assert start > end;
 		//assert start >= 0;
 		//assert end < args.length;
-		if (arr.length == 0)
+		if (arr.length == 0) {
+			CoverageUtil.coverBranchSubArray("subArray_branch_1");
 			return arr;
-		else if (end < start)
+		}
+		else if (end < start) {
+			CoverageUtil.coverBranchSubArray("subArray_branch_2");
 			return new String[0];
+		}
 		else {
+			CoverageUtil.coverBranchSubArray("subArray_branch_3");
 			int length = end - start;
 			String[] newSplit = new String[length];
 			System.arraycopy(arr, start, newSplit, 0, length);
@@ -193,9 +198,12 @@ public class StringMgmt {
 	}
 	
 	public static String capitalize(String str) {
-		if (str == null || str.isEmpty())
+		if (str == null || str.isEmpty()) {
+			CoverageUtil.coverBranchCapitalize("capitalize_branch_1");
 			return str;
-		
+		}
+
+		CoverageUtil.coverBranchCapitalize("capitalize_branch_2");
 		return str.substring(0, 1).toUpperCase() + str.substring(1);
 	}
 	

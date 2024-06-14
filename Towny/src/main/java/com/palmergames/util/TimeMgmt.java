@@ -39,8 +39,8 @@ public class TimeMgmt {
 			out += (out.length() > 0 ? ", " : "") + m + Translatable.of("msg_minutes").translate(locale);
 			l -= m * 60L;
 		}
-		if (out.length() == 0 || l > 0)
-			out += (out.length() > 0 ? ", " : "") + l + Translatable.of("msg_seconds").translate(locale);
+		if (out.length() == 0 || l > 0) out += (out.length() > 0 ? ", " : "") + l + Translatable.of("msg_seconds").translate(locale);
+		
 		return out;
 	}
 
