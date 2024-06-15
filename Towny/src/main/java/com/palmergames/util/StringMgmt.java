@@ -183,8 +183,11 @@ public class StringMgmt {
 
 		for (String s : arr)
 			if (s.equalsIgnoreCase(str))
+			{ CoverageUtil.coverBranchContainsIgnoreCase("containsIgnoreCase_branch_1");
 				return true;
-		return false;
+			}
+			CoverageUtil.coverBranchContainsIgnoreCase("containsIgnoreCase_branch_2");
+			return false;
 	}
 	
 	/**
@@ -218,12 +221,19 @@ public class StringMgmt {
 	
 	public static boolean parseOnOff(String s) throws Exception {
 
-		if (s.equalsIgnoreCase("on"))
+		if (s.equalsIgnoreCase("on")) {
+			CoverageUtil.coverBranchParseOnOff("parseOnOff_branch_1");
 			return true;
-		else if (s.equalsIgnoreCase("off"))
+		}
+		else if (s.equalsIgnoreCase("off")) {
+			CoverageUtil.coverBranchParseOnOff("parseOnOff_branch_2");
 			return false;
+		}
 		else
+		{
+			CoverageUtil.coverBranchParseOnOff("parseOnOff_branch_3");
 			throw new Exception(Translation.of("msg_err_invalid_input", "on/off."));
+		}
 	}
 	
 	public static boolean isAllUpperCase(@NotNull String string) {

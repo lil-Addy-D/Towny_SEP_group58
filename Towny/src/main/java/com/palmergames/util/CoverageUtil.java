@@ -8,8 +8,8 @@ public class CoverageUtil {
 		public static final Map<String, Boolean> branchCoverageSubArray = new HashMap<>();
 	    public static final Map<String, Boolean> branchCoverageIsAllUpperCase = new HashMap<>();
 		public static final Map<String, Boolean> branchCoverageCapitalize = new HashMap<>();
-
-		
+		public static final Map<String, Boolean> branchCoverageContainsIgnoreCase = new HashMap<>();
+	public static final Map<String, Boolean> branchCoverageParseOnOff = new HashMap<>();
 		
 		static {
 			branchCoverageRemArgs.put("remArgs_branch_1", false);
@@ -35,6 +35,18 @@ public class CoverageUtil {
 			branchCoverageCapitalize.put("capitalize_branch_1", false);
 			branchCoverageCapitalize.put("capitalize_branch_2", false);
 		}
+	
+		static {
+		branchCoverageContainsIgnoreCase.put("containsIgnoreCase_branch_1", false);
+			branchCoverageContainsIgnoreCase.put("containsIgnoreCase_branch_2", false);
+	}
+
+	static {
+		branchCoverageParseOnOff.put("parseOnOff_branch_1", false);
+		branchCoverageParseOnOff.put("parseOnOff_branch_2", false);
+		branchCoverageParseOnOff.put("parseOnOff_branch_3", false);
+	}
+		
 
 		public static void coverBranchRemArgs(String branchName) {
 			branchCoverageRemArgs.put(branchName, true);
@@ -51,6 +63,12 @@ public class CoverageUtil {
 			branchCoverageCapitalize.put(branchName, true);
 		}
 
+	public static void coverBranchContainsIgnoreCase(String branchName) {
+		branchCoverageContainsIgnoreCase.put(branchName, true);
+	}
+	public static void coverBranchParseOnOff(String branchName) {
+		branchCoverageParseOnOff.put(branchName, true);
+	}
 	public static void printCoverage(Map<String, Boolean> branchCoverage) {
 			int coveredCount = 0;
 			for (Map.Entry<String, Boolean> entry : branchCoverage.entrySet()) {
