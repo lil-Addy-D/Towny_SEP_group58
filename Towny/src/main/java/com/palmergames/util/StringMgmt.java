@@ -152,14 +152,18 @@ public class StringMgmt {
 	 * @return the shortened string
 	 */
 	public static String trimMaxLength(String str, int length) {
-
-		if (str.length() < length)
+		if (str.length() < length) {
+			CoverageUtil.coverBranchTrimMaxLength("trimMaxLength_branch_1");
 			return str;
-		else if (length > 3)
+		} else if (length > 3) {
+			CoverageUtil.coverBranchTrimMaxLength("trimMaxLength_branch_2");
 			return str.substring(0, length);
-		else
+		} else {
+			CoverageUtil.coverBranchTrimMaxLength("trimMaxLength_branch_3");
 			throw new UnsupportedOperationException("Minimum length of 3 characters.");
+		}
 	}
+
 
 	/**
 	 * Shortens the string to fit in the specified size with an ellipse "..." at
