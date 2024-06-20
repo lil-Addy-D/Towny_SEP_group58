@@ -152,14 +152,18 @@ public class StringMgmt {
 	 * @return the shortened string
 	 */
 	public static String trimMaxLength(String str, int length) {
-
-		if (str.length() < length)
+		if (str.length() < length) {
+			CoverageUtil.coverBranchTrimMaxLength("trimMaxLength_branch_1");
 			return str;
-		else if (length > 3)
+		} else if (length > 3) {
+			CoverageUtil.coverBranchTrimMaxLength("trimMaxLength_branch_2");
 			return str.substring(0, length);
-		else
+		} else {
+			CoverageUtil.coverBranchTrimMaxLength("trimMaxLength_branch_3");
 			throw new UnsupportedOperationException("Minimum length of 3 characters.");
+		}
 	}
+
 
 	/**
 	 * Shortens the string to fit in the specified size with an ellipse "..." at
@@ -183,8 +187,11 @@ public class StringMgmt {
 
 		for (String s : arr)
 			if (s.equalsIgnoreCase(str))
+			{ CoverageUtil.coverBranchContainsIgnoreCase("containsIgnoreCase_branch_1");
 				return true;
-		return false;
+			}
+			CoverageUtil.coverBranchContainsIgnoreCase("containsIgnoreCase_branch_2");
+			return false;
 	}
 	
 	/**
@@ -218,12 +225,19 @@ public class StringMgmt {
 	
 	public static boolean parseOnOff(String s) throws Exception {
 
-		if (s.equalsIgnoreCase("on"))
+		if (s.equalsIgnoreCase("on")) {
+			CoverageUtil.coverBranchParseOnOff("parseOnOff_branch_1");
 			return true;
-		else if (s.equalsIgnoreCase("off"))
+		}
+		else if (s.equalsIgnoreCase("off")) {
+			CoverageUtil.coverBranchParseOnOff("parseOnOff_branch_2");
 			return false;
+		}
 		else
+		{
+			CoverageUtil.coverBranchParseOnOff("parseOnOff_branch_3");
 			throw new Exception(Translation.of("msg_err_invalid_input", "on/off."));
+		}
 	}
 	
 	public static boolean isAllUpperCase(@NotNull String string) {

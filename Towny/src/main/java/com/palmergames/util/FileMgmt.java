@@ -56,9 +56,11 @@ public final class FileMgmt {
 		File file = new File(folderPath);
 		
 		if (file.exists() || file.isDirectory()) {
+			CoverageUtil.coverBranchCheckOrCreateFolder("checkOrCreateFolder_branch_1");
 			return true;
 		}
-		
+
+		CoverageUtil.coverBranchCheckOrCreateFolder("checkOrCreateFolder_branch_2");
 		return newDir(file);
 	}
 	
