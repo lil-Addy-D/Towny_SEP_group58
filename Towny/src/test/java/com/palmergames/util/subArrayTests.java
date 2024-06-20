@@ -18,7 +18,7 @@ public class subArrayTests {
 		String[] output = StringMgmt.subArray(input, start, end);
 		assertArrayEquals(input, output);
 	}
-	
+
 	@Test
 	@Order(2)
 	void testStartGreaterThanEnd() {
@@ -28,7 +28,7 @@ public class subArrayTests {
 		String[] output = StringMgmt.subArray(input, start, end);
 		assertArrayEquals(new String[0], output);
 	}
-	
+
 	@Test
 	@Order(3)
 	void testSplitting() {

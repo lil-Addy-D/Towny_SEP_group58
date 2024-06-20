@@ -14,14 +14,14 @@ public class capitalizeTest {
 	void emptyAndNullStringTest() {
 		String input1 = "";
 		String input2 = null;
-		
+
 		String output1 = StringMgmt.capitalize(input1);
 		assertEquals(input1, output1);
-		
+
 		String output2 = StringMgmt.capitalize(input2);
 		assertEquals(input2, output2);
 	}
-	
+
 	@Test
 	@Order(2)
 	void capitalizationTest() {
