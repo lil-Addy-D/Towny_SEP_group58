@@ -22,7 +22,7 @@ We used an inbuilt coverage tool in the intellij IDEA. We chose “Run ‘All Te
 
 This is the coverage results that we got:
 
-![Inbuilt coverage tool results](images\Intellij_cov_tool_results.png)
+![Inbuilt coverage tool results](images/Intellij_cov_tool_results.png)
 
 ### Your own coverage tool
 
@@ -124,21 +124,21 @@ Function 1: public static String[] remArgs(String[] arr, int startFromIndex)
 
 https://github.com/TownyAdvanced/Towny/commit/48d7877cd387e0aa5180687921c603d974164479
 
-![Domas' coverage diff](images\Domas_f1_coverage_diff.png)
+![Domas' coverage diff](images/Domas_f1_coverage_diff.png)
 
 Coverage results output by the instrumentation:
 
-![Domas' coverage results](images\Domas_f1_cov_res_before.png)
+![Domas' coverage results](images/Domas_f1_cov_res_before.png)
 
 This function was not tested therefore the coverage of it is 0.
 
 Function 2: public static boolean isAllUpperCase(@NotNull String string)
 
-![Domas' coverage diff](images\Domas_f2_cov_diff.png)
+![Domas' coverage diff](images/Domas_f2_cov_diff.png)
 
 https://github.com/TownyAdvanced/Towny/commit/88859586a1df6b2427dd8bbfdf6d01f39e32e061
 
-![Domas' coverage results](images\Domas_f2_cov_res_before.png)
+![Domas' coverage results](images/Domas_f2_cov_res_before.png)
 
 This function was not tested therefore the coverage of it is 0.
 
@@ -146,40 +146,40 @@ This function was not tested therefore the coverage of it is 0.
 
 Function 1: public static boolean containsIgnoreCase(List<String> arr, String str)
 
-![Benas' coverage diff](images\Benas_f1_cov_diff.png)
+![Benas' coverage diff](images/Benas_f1_cov_diff.png)
 
 Coverage results output by the instrumentation:
 
-![Benas' coverage results](images\Benas_f1_cov_res_before.png)
+![Benas' coverage results](images/Benas_f1_cov_res_before.png)
 
 
 Function 2: public static boolean parseOnOff(String s)
 
-![Benas' coverage diff](images\Benas_f2_cov_diff.png)
+![Benas' coverage diff](images/Benas_f2_cov_diff.png)
 
 Coverage results output by the instrumentation:
 
-![Benas' coverage results](images\Benas_f2_cov_res_before.png)
+![Benas' coverage results](images/Benas_f2_cov_res_before.png)
 
 
 ### Matteo Davidhi
 
 Function 1: public static boolean checkOrCreateFolder(String folderPath)
 
-![Matteo's coverage diff](images\Matteo_f1_cov_diff.png)
+![Matteo's coverage diff](images/Matteo_f1_cov_diff.png)
 
 Coverage results output by the instrumentation:
 
-![Matteo's coverage results](images\Matteo_f1_cov_res_before.png)
+![Matteo's coverage results](images/Matteo_f1_cov_res_before.png)
 
 
 Function 2: public static String trimMaxLength(String str, int length)
 
-![Matteo's coverage diff](images\Matteo_f2_cov_diff.png)
+![Matteo's coverage diff](images/Matteo_f2_cov_diff.png)
 
 Coverage results output by the instrumentation:
 
-![Matteo's coverage results](images\Matteo_f2_cov_res_before.png)
+![Matteo's coverage results](images/Matteo_f2_cov_res_before.png)
 
 
 ### Adas Triaušys
@@ -187,22 +187,22 @@ Coverage results output by the instrumentation:
 
 Function 1: public static String[] subArray(String[] arr, int start, int end)
 
-![Adas' coverage diff](images\Adas_f1_cov_diff.png)
+![Adas' coverage diff](images/Adas_f1_cov_diff.png)
 
 https://github.com/lil-Addy-D/Towny_SEP_group58/compare/e97942a4de075cc589b00d8b1e50c2656d76035a...5c5ebdca1e6d2afcdd335521008c1760678b6536
 
 Coverage results output by the instrumentation:
 
-![Adas' coverage results](images\Adas_f1_cov_res_before.png)
+![Adas' coverage results](images/Adas_f1_cov_res_before.png)
 
 
 Function 2: public static String capitalize(String str)
 
-![Adas' coverage diff](images\Adas_f2_cov_diff.png)
+![Adas' coverage diff](images/Adas_f2_cov_diff.png)
 
 Coverage results output by the instrumentation:
 
-![Adas' coverage results](images\Adas_f2_cov_res_before.png)
+![Adas' coverage results](images/Adas_f2_cov_res_before.png)
 
 ## Coverage improvement
 
@@ -212,38 +212,38 @@ Coverage results output by the instrumentation:
 
 Test 1
 
-![Domas' test diff](images\Domas_test1_pic1.png)
-![Domas' test diff](images\Domas_test1_pic2.png)
+![Domas' test diff](images/Domas_test1_pic1.png)
+![Domas' test diff](images/Domas_test1_pic2.png)
 
 
 https://github.com/TownyAdvanced/Towny/commit/1b40cc66353ef6e1a5ce94eadfd8531dad5effbf
 
 Coverage before:
 
-![Domas' coverage results](images\Domas_f1_cov_res_before.png)
+![Domas' coverage results](images/Domas_f1_cov_res_before.png)
 
 Coverage after:
 
-![Domas' coverage results](images\Domas_f1_cov_res_after.png)
+![Domas' coverage results](images/Domas_f1_cov_res_after.png)
 
 
 I added the tests for this function which was not previously tested. Since I made sure to cover all of the branches the new coverage is 100 %. It got improved by 100% as well since 100 - 0 = 100. The coverage is improved because now the function is actually being tested and I made sure that tests cover all of the branches.
 
 Test 2
 
-![Domas' test diff](images\Domas_test2_pic1.png)
-![Domas' test diff](images\Domas_test2_pic1.png)
+![Domas' test diff](images/Domas_test2_pic1.png)
+![Domas' test diff](images/Domas_test2_pic1.png)
 
 
 https://github.com/TownyAdvanced/Towny/commit/e97942a4de075cc589b00d8b1e50c2656d76035a
 
 Coverage before:
 
-![Domas' coverage results](images\Domas_f2_cov_res_before.png)
+![Domas' coverage results](images/Domas_f2_cov_res_before.png)
 
 Coverage after:
 
-![Domas' coverage results](images\Domas_f2_cov_res_after.png)
+![Domas' coverage results](images/Domas_f2_cov_res_after.png)
 
 As for the first function I added the tests for this function which was not previously tested. Since I made sure to cover all of the branches the new coverage is 100%. It got improved by 100% as well since 100 - 0 = 100. The coverage is improved because now the function is actually being tested compared to before and I made sure that tests cover all of the branches.
 
@@ -251,15 +251,15 @@ As for the first function I added the tests for this function which was not prev
 
 Test 1
 
-![Benas' test diff](images\Benas_test1.png)
+![Benas' test diff](images/Benas_test1.png)
 
 Coverage before:
 
-![Benas' coverage results](images\Benas_f1_cov_res_before.png)
+![Benas' coverage results](images/Benas_f1_cov_res_before.png)
 
 Coverage after:
 
-![Benas' coverage results](images\Benas_f1_cov_res_after.png)
+![Benas' coverage results](images/Benas_f1_cov_res_after.png)
 
 
 Similarly to other methods we’ve tested, I added the tests for this function which was not previously tested. Since I made sure to cover all of the branches, the new coverage is 100%. It got improved by 100% as well since 100 - 0 = 100. The coverage is improved because now the function is actually being tested compared to before and I made sure that tests cover all of the branches.
@@ -267,15 +267,15 @@ Similarly to other methods we’ve tested, I added the tests for this function w
 
 Test 2
 
-![Benas' test diff](images\Benas_test2.png)
+![Benas' test diff](images/Benas_test2.png)
 
 Coverage before:
 
-![Benas' coverage results](images\Benas_f2_cov_res_before.png)
+![Benas' coverage results](images/Benas_f2_cov_res_before.png)
 
 Coverage after:
 
-![Benas' coverage results](images\Benas_f2_cov_res_after.png)
+![Benas' coverage results](images/Benas_f2_cov_res_after.png)
 
 
 Similarly to other methods we’ve tested, I added the tests for this function which was not previously tested. Since I made sure to cover all of the branches, the new coverage is 100%. It got improved by 100% as well since 100 - 0 = 100. The coverage is improved because now the function is actually being tested compared to before and I made sure that tests cover all of the branches.
@@ -285,15 +285,15 @@ Similarly to other methods we’ve tested, I added the tests for this function w
 
 Test 1
 
-![Matteo's test diff](images\Matteo_test1.png)
+![Matteo's test diff](images/Matteo_test1.png)
 
 Coverage before:
 
-![Matteo's coverage results](images\Matteo_f1_cov_res_before.png)
+![Matteo's coverage results](images/Matteo_f1_cov_res_before.png)
 
 Coverage after:
 
-![Matteo's coverage results](images\Matteo_f1_cov_res_after.png)
+![Matteo's coverage results](images/Matteo_f1_cov_res_after.png)
 
 
 The function was not previously tested at all, and I have created tests for all the branches of the function, so the branch coverage went from 0 to 100 percent, meaning each branch of the selected function is executed at least once by a test.
@@ -301,15 +301,15 @@ The function was not previously tested at all, and I have created tests for all 
 Test 2
 
 
-![Matteo's test diff](images\Matteo_test2.png)
+![Matteo's test diff](images/Matteo_test2.png)
 
 Coverage before:
 
-![Matteo's coverage results](images\Matteo_f2_cov_res_before.png)
+![Matteo's coverage results](images/Matteo_f2_cov_res_before.png)
 
 Coverage after:
 
-![Matteo's coverage results](images\Matteo_f2_cov_res_after.png)
+![Matteo's coverage results](images/Matteo_f2_cov_res_after.png)
 
 
 The function was not previously tested at all, and I have created tests for all the branches of the function, so the branch coverage went from 0 to 100 percent, meaning each branch of the selected function is executed at least once by a test.
@@ -320,30 +320,30 @@ The function was not previously tested at all, and I have created tests for all 
 
 Test 2
 
-![Adas' test diff](images\Adas_test1.png)
+![Adas' test diff](images/Adas_test1.png)
 
 Coverage before:
 
-![Adas' coverage results](images\Adas_f1_cov_res_before.png)
+![Adas' coverage results](images/Adas_f1_cov_res_before.png)
 
 Coverage after:
 
-![Adas' coverage results](images\Adas_f1_cov_res_after.png)
+![Adas' coverage results](images/Adas_f1_cov_res_after.png)
 
 The coverage of subArray function increased by 100% because before it was not tested at all, and I created tests for it while making sure that the tests reach every branch of the function, hence the increase in coverage.
 
 Test 2
 
 
-![Adas' test diff](images\Adas_test2.png)
+![Adas' test diff](images/Adas_test2.png)
 
 Coverage before:
 
-![Adas' coverage results](images\Adas_f2_cov_res_before.png)
+![Adas' coverage results](images/Adas_f2_cov_res_before.png)
 
 Coverage after:
 
-![Adas' coverage results](images\Adas_f2_cov_res_after.png)
+![Adas' coverage results](images/Adas_f2_cov_res_after.png)
 
 Again, the coverage went from being 0% to being 100% 
 
@@ -351,11 +351,11 @@ Again, the coverage went from being 0% to being 100%
 
 Overall coverage before:
 
-![Overall coverage before](images\Intellij_cov_tool_results.png)
+![Overall coverage before](images/Intellij_cov_tool_results.png)
 
 Overall coverage after:
 
-![Overall coverage after](images\Cov_tool_after.png)
+![Overall coverage after](images/Cov_tool_after.png)
 
 As can be seen from the two screenshots branch coverage for StringMgmt class was improved from 7% to 60%, and from 2% to 4% for FileMgmt.
 
