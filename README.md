@@ -18,7 +18,7 @@ Programming language: Java
 
 We used an inbuilt coverage tool in the intellij IDEA. We chose “Run ‘All Tests’ with Coverage”.
 
-![Existing IntelliJ IDEA covearage tool](images\Intelij_cov_tool.png)
+![Existing IntelliJ IDEA covearage tool](images/Intelij_cov_tool.png)
 
 This is the coverage results that we got:
 
