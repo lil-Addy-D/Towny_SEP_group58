@@ -232,7 +232,7 @@ I added the tests for this function which was not previously tested. Since I mad
 Test 2
 
 ![Domas' test diff](images\Domas_test2_pic1.png)
-![Domas' test diff](images\Domas_test2_pic1.png)
+![Domas' test diff](images\Domas_test2_pic2.png)
 
 
 https://github.com/TownyAdvanced/Towny/commit/e97942a4de075cc589b00d8b1e50c2656d76035a
