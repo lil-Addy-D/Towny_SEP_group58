@@ -27,7 +27,8 @@ This is the coverage results that we got:
 ### Your own coverage tool
 
 At first we as a group created a helper Utility file in which we put our global structures and helper functions. Later we created a separate test for printing coverage to the console which is executed last. For easier readability while reporting on coverage for separate functions we only printed the coverage information for the selected function. Here are the results. We do not repeat the shared code in each of our parts separately. The functions in a shared file are very similar, just mainly the names are different.
-package com.palmergames.util;
+      
+      package com.palmergames.util;
 
 
 
@@ -259,7 +260,7 @@ Coverage before:
 
 Coverage after:
 
-![Benas' coverage results](images/Benas_f1_cov_res_after.png)
+![Benas' coverage results](images/Benas_cov_after_fix.png)
 
 
 Similarly to other methods we’ve tested, I added the tests for this function which was not previously tested. Since I made sure to cover all of the branches, the new coverage is 100%. It got improved by 100% as well since 100 - 0 = 100. The coverage is improved because now the function is actually being tested compared to before and I made sure that tests cover all of the branches.
